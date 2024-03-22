@@ -8,9 +8,9 @@ pipeline {
     environment {
         IMAGE_REPO_NAME="project-repo"
         IMAGE_TAG="v1"
-        AWS_ACCOUNT_ID="152500383942"
+        AWS_ACCOUNT_ID="688329047339"
         AWS_DEFAULT_REGION="us-east-1"
-        REPOSITORY_URI = "152500383942.dkr.ecr.us-east-1.amazonaws.com/project-repo"
+        REPOSITORY_URI = "688329047339.dkr.ecr.us-east-1.amazonaws.com/project-repo"
     }
     
     stages {
