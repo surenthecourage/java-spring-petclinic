@@ -4,7 +4,6 @@ pipeline {
     tools {
         jdk 'jdk17'
         maven 'maven3'
-        docker 'docker'
     }
     environment {
         IMAGE_REPO_NAME="project-repo"
