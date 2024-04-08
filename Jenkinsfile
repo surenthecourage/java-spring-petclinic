@@ -20,19 +20,19 @@ pipeline {
             }
         }
         
-        stage('Compile') {
-            steps {
-                sh "mvn compile"
-            }
+    stage('Compile') {
+        steps {
+            sh "mvn compile"
         }
-        
-        stage('Build') {
-            steps {
-                sh "mvn install -Dmaven.test.skip=true"
-            }
+    }
+    
+    stage('Build') {
+        steps {
+            sh "mvn install -Dmaven.test.skip=true"
         }
-        
-        // Building Docker images
+    }
+    
+    // Building Docker images
     stage('Building image') {
       steps{
         script {
@@ -49,5 +49,5 @@ pipeline {
                     }
                 }
             }
+        }
     }
-}
