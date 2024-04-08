@@ -10,7 +10,7 @@ pipeline {
         IMAGE_TAG="v1"
         AWS_ACCOUNT_ID="954973595150"
         AWS_DEFAULT_REGION="us-east-1"
-        REPOSITORY_URI = "954973595150.dkr.ecr.us-east-1.amazonaws.com/project-repo"
+        REPOSITORY_URI = "https://954973595150.dkr.ecr.us-east-1.amazonaws.com/project-repo"
         ECR_CRED = "ecr-cred"
     }
     
