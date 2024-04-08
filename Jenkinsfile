@@ -40,5 +40,14 @@ pipeline {
                 }
             }
         }
+
+    stage('Pushing image') {
+        steps{
+            script {
+                docker.withRegistry("$REPOSITORY_URI", "ecr:$AWS_DEFAULT_REGION:credential-id") {
+                    docker.image("${IMAGE_REPO_NAME}:${IMAGE_TAG}").push()
+                    }
+                }
+            }
     }
 }
